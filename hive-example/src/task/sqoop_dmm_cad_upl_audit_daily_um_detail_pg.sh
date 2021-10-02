@@ -84,5 +84,6 @@ sqoop export	-D mapreduce.job.queuename=$queueName \
 
 
 
+
 task_run $? "dmm_cad_upl_audit_daily_um_detail(hive) to dmm_cad_upl_audit_daily_um_detail(pg)"
 echo "#################script sqoop_dmm_cad_upl_audit_daily_um_detail_pg.sh successfully finished #################"
