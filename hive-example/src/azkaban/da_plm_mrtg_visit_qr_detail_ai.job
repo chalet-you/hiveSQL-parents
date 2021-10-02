@@ -1,0 +1,10 @@
+type=command
+
+command=  sh /var/applications/hiveSQL-parents\hive-example\src\shell\bdsp_check_table_is_ready.sh ph_dw_default ph_dwm dwm_vw_visit_info
+command.1=sh /var/applications/
+command.2=
+command.3=
+command.4=
+
+retries=3
+retry.backoff=120000

@@ -1,0 +1,11 @@
+sqoop import \
+--connect jdbc:mysql://node3:3306/nev \
+--username root \
+--password 123456 \
+--driver com.mysql.jdbc.Driver \
+--query 'select id, create_date_time, session_id, sid, create_time, seo_source, seo_keywords, ip, area, country, province, city, origin_channel, user as user_match, manual_time, begin_time, end_time, last_customer_msg_time_stamp, last_agent_msg_time_stamp, reply_msg_count, msg_count, browser_name, os_info, "2019-07-01" as starts_time from web_chat_ems_2019_07 where $CONDITIONS' \
+--hcatalog-database itcast_ods \
+--hcatalog-table web_chat_ems \
+--hcatalog-storage-stanza 'stored as orc tblproperties ("orc.compress"="ZLIB")' \
+-m 2 \
+--split-by id

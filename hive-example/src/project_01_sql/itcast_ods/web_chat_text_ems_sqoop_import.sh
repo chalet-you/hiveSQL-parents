@@ -1,0 +1,11 @@
+sqoop import \
+--connect jdbc:mysql://node3:3306/nev \
+--username root \
+--password 123456 \
+--driver com.mysql.jdbc.Driver \
+--query 'select id,referrer,from_url,landing_page_url,url_title,platform_description,other_params,history, "2019-07-01" as start_time from web_chat_text_ems_2019_07 where $CONDITIONS' \
+--hcatalog-database itcast_ods \
+--hcatalog-table web_chat_text_ems \
+--hcatalog-storage-stanza 'stored as orc tblproperties ("orc.compress"="ZLIB")' \
+-m 2 \
+--split-by id
