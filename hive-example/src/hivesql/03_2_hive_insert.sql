@@ -12,6 +12,17 @@ create table t_test_insert
 insert into table t_test_insert
 values (1, "allen", 18);
 
+insert into  t_test_insert
+values (2, "youxuan", 20);
+
+insert overwrite table t_test_insert
+values (3, "panting", 10);
+
+
+insert overwrite table t_test_insert
+values (4, "pg", 33);
+
+
 select *
 from t_test_insert;
 

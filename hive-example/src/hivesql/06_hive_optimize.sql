@@ -41,8 +41,10 @@ create table tb_login_part(
 --开启动态分区
 set hive.exec.dynamic.partition.mode=nonstrict;
 --按登录日期分区
-insert into table tb_login_part partition(logindate)
-select * from tb_login;
+insert overwrite table tb_login_part partition(logindate)
+select * from tb_login where logindate='2021-03-23';
+
+select * from tb_login_part;
 
 --基于分区表查询数据
 explain extended
