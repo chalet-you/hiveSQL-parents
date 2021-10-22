@@ -62,11 +62,34 @@ select current_date();
 --同一查询中对current_timestamp的所有调用均返回相同的值。
 select current_timestamp();
 --获取当前UNIX时间戳函数: unix_timestamp
+
+
+-- 一、unix_timestamp函数用法
+-- 1、unix_timestamp() 得到当前时间戳
+-- 2、如果参数date满足yyyy-MM-dd HH:mm:ss形式，则可以直接unix_timestamp(string date) 得到参数对应的时间戳
+-- 3、如果参数date不满足yyyy-MM-dd HH:mm:ss形式，则我们需要指定date的形式，在进行转换
+
 select unix_timestamp();
 --日期转UNIX时间戳函数: unix_timestamp
-select unix_timestamp("2011-12-07 13:01:03");
+select unix_timestamp("2011-12-07 13:01:00");   --1323234060
+select unix_timestamp("2011-12-07 13:01:00","yyyy-MM-dd HH:mm:ss");   --1323234060
+select unix_timestamp("2011-12-07 13:01:01","yyyy-MM-dd HH:mm:ss");   --1323234061
 --指定格式日期转UNIX时间戳函数: unix_timestamp
 select unix_timestamp("20111207 13:01:03","yyyyMMdd HH:mm:ss");
+select unix_timestamp("20111207 ","yyyyMMdd");
+
+-- 二、from_unixtime函数用法
+-- 语法：from_unixtime(t1,’yyyy-MM-dd HH:mm:ss’)
+-- 其中t1是10位的时间戳值，即1970-1-1至今的秒，而13位的所谓毫秒的是不可以的。
+-- 对于13位时间戳，需要截取，然后转换成bigint类型，因为from_unixtime类第一个参数只接受bigint类型。例如：
+select from_unixtime(1237507201,'yyyy-MM-dd HH:mm:ss') -- 2009-03-20 00:00:01
+select from_unixtime(1237507200,'yyyy-MM-dd HH:mm:ss') -- 2009-03-20 00:00:00
+
+--常用的插入时间为当前系统时间 转换成距离1970的时间戳，再转换成当前时间
+
+select FROM_UNIXTIME(UNIX_TIMESTAMP() ,'yyyy-MM-dd HH:mm:ss') AS W_INSERT_DT
+
+
 --UNIX时间戳转日期函数: from_unixtime
 select from_unixtime(1618238391);
 select from_unixtime(0, 'yyyy-MM-dd HH:mm:ss');
@@ -77,6 +100,12 @@ select date_add('2012-02-28',10);
 --日期减少函数: date_sub
 select date_sub('2012-01-1',10);
 
+--问题1，计算2021-10-22 12:45:56 点，经过了6538455分钟后是那年那月那号，几时几分几秒？
+select from_unixtime(unix_timestamp('2021-10-22 12:45:56','yyyy-MM-dd HH:mm:ss')+cast(6538455*60 as bigint),'yyyy-MM-dd HH:mm:ss');  --2034-03-29 03:00:56
+select from_unixtime(unix_timestamp('2021-10-22 12:45:56','yyyy-MM-dd HH:mm:ss')+6538455*60,'yyyy-MM-dd HH:mm:ss');                  --2034-03-29 03:00:56
+
+--问题2，计算2021-10-22 12:45:56 123 点，经过了6538455分钟后是那年那月那号，几时几分几秒？
+select from_utc_timestamp(unix_timestamp('2021-10-22 12:45:56')*1000 + cast(187455 as bigint),'yyyy-MM-dd HH:mm:ss.SSS');
 
 --抽取日期函数: to_date
 select to_date('2009-07-30 04:17:52');
