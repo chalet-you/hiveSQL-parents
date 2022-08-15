@@ -17,7 +17,7 @@ function wait_table_sqoop() {
   table_name=$3
 # 看替换的定义，${varname:-word}，如果varname存在且非null，则返回其值；否则，返回word。用途：如果变量未定义，则返回默认值。
 # 变量替换     ${varname:-word} ,如果变量varname存在且非null，则返回其值，否则，返回word
-# 此处的意思是：如果参数4存在那么就返回参数4，否则返回参数 yesterday
+# 此处的意思是：如果外部参数4传入那么就取外部传入的参数4，否则返回参数 yesterday
   sign_time=${4:-${yesterday}}
 
   # 第四个参数为 today，则取当天的日期标记success，其余情况取昨天

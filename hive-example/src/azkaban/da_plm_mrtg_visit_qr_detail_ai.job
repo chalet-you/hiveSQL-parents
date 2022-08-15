@@ -1,10 +1,10 @@
 type=command
 
-command=  sh /var/applications/hiveSQL-parents\hive-example\src\shell\bdsp_check_table_is_ready.sh ph_dw_default ph_dwm dwm_vw_visit_info
-command.1=sh /var/applications/
-command.2=
-command.3=
-command.4=
+command=sh /var/applications/hiveSQL-parents\hive-example\src\shell\bdsp_check_table_is_ready.sh ph_dw_default ph_dwm dwm_vw_visit_info
+command.1=sh /var/applications/hiveSQL-parents\hive-example\src\shell\bdsp_check_table_is_ready.sh ph_dw_default ph_dwm dwm_vm_visit_record_info
+command.2=sh /var/applications/hiveSQL-parents\hive-example\src\shell\bdsp_check_table_is_ready.sh ph_dw_default ph_dwm dwm_vm_visit_ai_qc_result
+command.3=sh /var/applications/hiveSQL-parents\hive-example\src\shell\bdsp_check_table_is_ready.sh ph_dw_default ph_dwm dwm_pat_apply_org_conf_base
+command.4=sh /var/applications/hiveSQL-parents\hive-example\src\shell\bdsp_exec_hql.sh ph_rc_default /var/applications/ph_rc_bdsp/tasks/da/da_plm_mrtg_visit_qr_detail/da_plm_mrtg_visit_qr_detail_ai.sql
 
 retries=3
 retry.backoff=120000

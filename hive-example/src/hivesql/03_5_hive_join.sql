@@ -123,7 +123,7 @@ from employee e left semi join employee_address e_addr
 on e.id =e_addr.id;
 
 --相当于 inner join,但是只返回左表全部数据， 只不过效率高一些
-select e.*
+select *
 from employee e inner join employee_address e_addr
 on e.id =e_addr.id;
 
@@ -180,3 +180,79 @@ SELECT /*+ MAPJOIN(b) */ a.key, a.value FROM a JOIN b ON a.key = b.key
 
 
 
+
+
+
+-- 建表
+use youxuan;
+
+DROP TABLE IF EXISTS table1;
+
+create table table1(
+
+                       student_no      bigint  comment '学号',
+
+                       student_name    string  comment '姓名'
+
+)
+
+    COMMENT 'test 学生信息'
+
+    ROW FORMAT DELIMITED
+
+        FIELDS TERMINATED BY '\t'
+
+        LINES TERMINATED BY '\n'
+
+    STORED AS TEXTFILE;
+
+
+
+DROP TABLE IF EXISTS table2;
+
+create table table2(
+
+                       student_no      bigint  comment '学号',
+
+                       class_no        bigint  comment '课程号'
+
+)
+
+    COMMENT 'test 学生选课信息'
+
+    ROW FORMAT DELIMITED
+
+        FIELDS TERMINATED BY '\t'
+
+        LINES TERMINATED BY '\n'
+
+    STORED AS TEXTFILE;
+
+
+
+-- 加载数据
+load data local inpath  '/root/hivedata/data_table1.txt' overwrite into table table1 ;
+load data local inpath  '/root/hivedata/data_table2.txt' overwrite into table table2 ;
+
+--测试
+
+select * from table1;
+select * from table2;
+SELECT table1.student_no, table1.student_name
+
+FROM table1
+
+WHERE table1.student_no in (SELECT table2.student_no FROM table2);
+
+
+SELECT * FROM table1 LEFT SEMI JOIN table2 on ( table1.student_no =table2.student_no);
+
+--此外，注意需要以下几项：
+--left semi join 的限制是， JOIN 子句中右边的表只能在 ON 子句中设置过滤条件，在 WHERE 子句、SELECT 子句或其他地方过滤都不行。
+
+SELECT * FROM table1 LEFT SEMI JOIN table2 on ( table1.student_no =table2.student_no) where table2.student_no>3;
+--会报错：
+-- FAILED: SemanticException [Error 10004]: Line 1:92 Invalid table alias or column reference 'table2': (possible column names are: student_no, student_name)
+
+--对右表的过滤条件只能写在on子句中：
+SELECT * FROM table1 LEFT SEMI JOIN table2 on ( table1.student_no =table2.student_no and  table2.student_no>3);
