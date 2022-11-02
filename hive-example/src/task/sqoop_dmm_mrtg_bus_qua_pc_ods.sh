@@ -106,22 +106,22 @@ echo "---------------开始导入${processdate}数据---------------"
 
 
 
-sqoop export	-D mapreduce.job.queuename=$queueName \
-				      --table ${tableName} \
-				      --connect "${connectionStr}" \
-				      --username ${username} \
-				      --password-alias sqoop.oracle.cfods.${username} \
-				      --hcatalog-database ph_rc_dmm \
-				      --hcatalog-table ${srcTableName} \
-				      --hcatalog-partition-keys report_date \
-				      --hcatalog-partition-values ${processdate} \
-				      --columns credit_apply_no,apply_no,cust_no,credit_line,fund_name,loan_amt,pay_type,loan_date,repay_cnt,repay_amt,create_by,date_created,updataed_by,date_updated,report_date \
-				      --m 1 \
-				      --batch \
-				      --input-fields-terminated-by '\t \
-				      --input-lines-terminated-by '\n' \
-				      --input-null-string '\\\\N' \
-				      --input-null-non-string '\\\\N'
+sqoop export	 -D mapreduce.job.queuename=$queueName \
+				       --table ${tableName} \
+				       --connect "${connectionStr}" \
+				       --username ${username} \
+				       --password-alias sqoop.oracle.cfods.${username} \
+				       --hcatalog-database ph_rc_dmm \
+				       --hcatalog-table ${srcTableName} \
+				       --hcatalog-partition-keys report_date \
+				       --hcatalog-partition-values ${processdate} \
+				       --columns credit_apply_no,apply_no,cust_no,credit_line,fund_name,loan_amt,pay_type,loan_date,repay_cnt,repay_amt,create_by,date_created,updataed_by,date_updated,report_date \
+				       --m 1 \
+				       --batch \
+				       --input-fields-terminated-by '\t \
+				       --input-lines-terminated-by '\n' \
+				       --input-null-string '\\\\N' \
+				       --input-null-non-string '\\\\N'
 
 				
 				

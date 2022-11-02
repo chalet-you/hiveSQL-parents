@@ -207,6 +207,8 @@ dirTableName=dmm_plm_cmp_packet_cut_info
 ip=cfods.db.paic.com.cn
 port=1531
 filename=tmp_${tableName}_${current_date}.log
+# 这里是用来判断环境的  || 表示或者   && 表示并且
+# telnet  是用来测试远程服务器的端口是否开启，是否可以访问这个端口
 env=`timeout 0.1 telnet $ip $port > $filename || cat $filename | grep scape | wc -l && rm -rf $filename`
 
 #dwm抽数到cfods
