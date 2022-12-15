@@ -1,0 +1,7 @@
+#用来处理队列表卡住的情况
+type=command
+
+#通过AZ传入参数 tb 和 query
+p1=${tb}
+p2=${query}
+command=sh /var/applications/ph_rbdpp/tasks/shells/bdsp_transaction_table_query.sh ph_rc_qmx "${p1}" "${p2}"
