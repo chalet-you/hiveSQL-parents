@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0d33f5c9-35c4-49d6-9db4-66bde7abc2d0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/hive-example/src/azkaban/da_plm_mrtg_visit_qr_base_end.job" beforeDir="false" afterPath="$PROJECT_DIR$/hive-example/src/azkaban/da_plm_mrtg_visit_qr_base_end.job" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hive-example/src/hivesql/2_hive_load.sql" beforeDir="false" afterPath="$PROJECT_DIR$/hive-example/src/hivesql/2_hive_load.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hive-example/src/project_01_sql/itcast_ods/web_chat_text_ems_sqoop_import.sh" beforeDir="false" afterPath="$PROJECT_DIR$/hive-example/src/project_01_sql/itcast_ods/web_chat_text_ems_sqoop_import.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hive-example/src/shell/bdsp_check_table_is_ready.sh" beforeDir="false" afterPath="$PROJECT_DIR$/hive-example/src/shell/bdsp_check_table_is_ready.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hive-example/src/shell/bdsp_generate_success_flag.sh" beforeDir="false" afterPath="$PROJECT_DIR$/hive-example/src/shell/bdsp_generate_success_flag.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hive-example/src/task/ck.sh" beforeDir="false" afterPath="$PROJECT_DIR$/hive-example/src/task/ck.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hive-example/src/task/dmm_plm_cmp_packet_cut_info.sh" beforeDir="false" afterPath="$PROJECT_DIR$/hive-example/src/task/dmm_plm_cmp_packet_cut_info.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hive-example/src/task/hive_to_csv.sh" beforeDir="false" afterPath="$PROJECT_DIR$/hive-example/src/task/hive_to_csv.sh" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@192.168.88.163" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ExecutionTargetDialog">
+    <checked>
+      <node key="577d0365-b8d4-48d3-a8ad-6cd6e4555f3c" />
+    </checked>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\develop\Apache\Maven_Repository" />
+        <option name="mavenHome" value="D:/develop/Apache/apache-maven-3.3.9" />
+        <option name="userSettingsFile" value="D:\develop\Apache\apache-maven-3.3.9\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1wwrvkFnyjjwLg05E33Hszqasmk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="hive" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/hive-example/src/task" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\youxuan\java_code\hiveSQL-parents\hive-example\src\project_01_sql\itcast_ods" />
+      <recent name="E:\youxuan\java_code\hiveSQL-parents\hive-example\src\task" />
+      <recent name="E:\youxuan\java_code\hiveSQL-parents\hive-example\src\shell" />
+      <recent name="E:\youxuan\java_code\hiveSQL-parents\hive-example\src\hivesql" />
+      <recent name="E:\youxuan\java_code\hiveSQL-parents\hive-example\src\hivesql\DDL" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\youxuan\java_code\hiveSQL-parents\hive-example\src\task" />
+      <recent name="E:\youxuan\java_code\hiveSQL-parents\hive-example\src\shell" />
+      <recent name="E:\youxuan\java_code\hiveSQL-parents\hive-example\src\hivesql" />
+      <recent name="E:\youxuan\java_code\hiveSQL-parents\hive-example\src\hivesql\DDL" />
+      <recent name="E:\youxuan\java_code\hiveSQL-parents\hive-example\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Shell Script.web_chat_text_ems_sqoop_import.sh">
+    <configuration name="Student" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Student" />
+      <module name="hive-example" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="bdsp_check_table_is_ready.sh" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/hive-example/src/shell/bdsp_check_table_is_ready.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/hive-example/src/shell" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="da_plm_ocd_upl_migration_rate_base_ods.sh.sh (1)" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/hive-example/src/task/da_plm_ocd_upl_migration_rate_base_ods.sh.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/hive-example/src/task" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="web_chat_ems_sqoop_import.sh" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/hive-example/src/project_01_sql/itcast_ods/web_chat_ems_sqoop_import.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/hive-example/src/project_01_sql/itcast_ods" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="web_chat_text_ems_sqoop_import.sh" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/hive-example/src/project_01_sql/itcast_ods/web_chat_text_ems_sqoop_import.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/hive-example/src/project_01_sql/itcast_ods" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Shell Script.web_chat_text_ems_sqoop_import.sh" />
+        <item itemvalue="Shell Script.web_chat_ems_sqoop_import.sh" />
+        <item itemvalue="Application.Student" />
+        <item itemvalue="Shell Script.da_plm_ocd_upl_migration_rate_base_ods.sh.sh (1)" />
+        <item itemvalue="Shell Script.bdsp_check_table_is_ready.sh" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.19134994" />
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0d33f5c9-35c4-49d6-9db4-66bde7abc2d0" name="Default Changelist" comment="" />
+      <created>1629380724750</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1629380724750</updated>
+      <workItem from="1629380727710" duration="820000" />
+      <workItem from="1629462417721" duration="7967000" />
+      <workItem from="1629525038059" duration="4200000" />
+      <workItem from="1629629261292" duration="270000" />
+      <workItem from="1629629544729" duration="456000" />
+      <workItem from="1629630084492" duration="10074000" />
+      <workItem from="1629720568818" duration="39000" />
+      <workItem from="1629720626539" duration="7106000" />
+      <workItem from="1629806255102" duration="7999000" />
+      <workItem from="1629976892229" duration="7235000" />
+      <workItem from="1630112751627" duration="7231000" />
+      <workItem from="1630130504662" duration="8414000" />
+      <workItem from="1630217979851" duration="11511000" />
+      <workItem from="1630323124726" duration="7804000" />
+      <workItem from="1630413394308" duration="2407000" />
+      <workItem from="1631251904447" duration="1000000" />
+      <workItem from="1631254222531" duration="5354000" />
+      <workItem from="1631277470905" duration="1020000" />
+      <workItem from="1631340113349" duration="12761000" />
+      <workItem from="1631603983289" duration="1527000" />
+      <workItem from="1631623949737" duration="700000" />
+      <workItem from="1631705462363" duration="4462000" />
+      <workItem from="1631792321795" duration="4183000" />
+      <workItem from="1631848741795" duration="331000" />
+      <workItem from="1632029847678" duration="637000" />
+      <workItem from="1632056096785" duration="5646000" />
+      <workItem from="1632067318266" duration="76000" />
+      <workItem from="1632140919745" duration="2551000" />
+      <workItem from="1632320464652" duration="2714000" />
+      <workItem from="1632492654335" duration="1467000" />
+      <workItem from="1632563935951" duration="8373000" />
+      <workItem from="1632755354928" duration="2836000" />
+      <workItem from="1632836596313" duration="470000" />
+      <workItem from="1632919926561" duration="103000" />
+      <workItem from="1633006073087" duration="11796000" />
+      <workItem from="1633092966216" duration="383000" />
+      <workItem from="1633098066449" duration="3571000" />
+      <workItem from="1633139346079" duration="3726000" />
+      <workItem from="1633189776982" duration="1696000" />
+      <workItem from="1633594944441" duration="604000" />
+      <workItem from="1633701767747" duration="11000" />
+      <workItem from="1634313330719" duration="88000" />
+      <workItem from="1634374681309" duration="710000" />
+      <workItem from="1634561632789" duration="886000" />
+      <workItem from="1634648807668" duration="1256000" />
+      <workItem from="1634829978438" duration="4932000" />
+      <workItem from="1634908839869" duration="2475000" />
+      <workItem from="1634973625035" duration="20000" />
+      <workItem from="1635551609161" duration="1953000" />
+      <workItem from="1635599162702" duration="16000" />
+      <workItem from="1635690653570" duration="1111000" />
+      <workItem from="1635774656605" duration="174000" />
+      <workItem from="1636036027262" duration="12000" />
+      <workItem from="1637072722560" duration="1569000" />
+      <workItem from="1638000664206" duration="798000" />
+      <workItem from="1638010294877" duration="602000" />
+      <workItem from="1638533206181" duration="534000" />
+      <workItem from="1641048104347" duration="615000" />
+      <workItem from="1642082214471" duration="1249000" />
+      <workItem from="1644736173970" duration="489000" />
+      <workItem from="1652951681710" duration="246000" />
+      <workItem from="1654869483797" duration="753000" />
+      <workItem from="1657021132208" duration="547000" />
+      <workItem from="1658924790248" duration="1144000" />
+      <workItem from="1659361076799" duration="1837000" />
+      <workItem from="1660441754072" duration="612000" />
+      <workItem from="1660446296269" duration="1049000" />
+      <workItem from="1660525035718" duration="1551000" />
+      <workItem from="1660568451622" duration="62000" />
+      <workItem from="1662088706396" duration="6148000" />
+      <workItem from="1662106802035" duration="4000" />
+      <workItem from="1667366900256" duration="1037000" />
+      <workItem from="1670549516089" duration="2568000" />
+      <workItem from="1670651925515" duration="601000" />
+      <workItem from="1671067525722" duration="4538000" />
+      <workItem from="1671083678316" duration="333000" />
+      <workItem from="1672385163379" duration="6564000" />
+      <workItem from="1672757568292" duration="8000" />
+      <workItem from="1673340997730" duration="1586000" />
+      <workItem from="1673513191047" duration="4192000" />
+      <workItem from="1673582782866" duration="1535000" />
+      <workItem from="1673605973521" duration="45000" />
+      <workItem from="1675146716808" duration="20000" />
+      <workItem from="1675146834827" duration="110000" />
+      <workItem from="1680533422592" duration="1265000" />
+      <workItem from="1680593574380" duration="603000" />
+      <workItem from="1680595060218" duration="2000" />
+      <workItem from="1681717118741" duration="1349000" />
+      <workItem from="1687762779294" duration="787000" />
+      <workItem from="1687844671071" duration="1342000" />
+      <workItem from="1687917112311" duration="11000" />
+      <workItem from="1691063627215" duration="3913000" />
+      <workItem from="1691195726220" duration="1011000" />
+      <workItem from="1691198066135" duration="283000" />
+      <workItem from="1691201369332" duration="783000" />
+      <workItem from="1691287746673" duration="6000" />
+      <workItem from="1691300288000" duration="50000" />
+      <workItem from="1691300834114" duration="1259000" />
+      <workItem from="1691304925651" duration="23000" />
+      <workItem from="1691335669569" duration="35000" />
+      <workItem from="1691368043609" duration="1555000" />
+      <workItem from="1691500526998" duration="648000" />
+      <workItem from="1691548803575" duration="8000" />
+      <workItem from="1691903257903" duration="2552000" />
+      <workItem from="1691924846975" duration="2116000" />
+      <workItem from="1692013899764" duration="1746000" />
+      <workItem from="1692255501260" duration="728000" />
+      <workItem from="1692258086543" duration="367000" />
+      <workItem from="1692754536975" duration="54000" />
+      <workItem from="1692927334033" duration="117000" />
+      <workItem from="1692927484655" duration="8000" />
+      <workItem from="1693062423811" duration="130000" />
+      <workItem from="1693373244553" duration="51000" />
+      <workItem from="1693578346703" duration="44000" />
+      <workItem from="1693637362383" duration="2373000" />
+      <workItem from="1693928783160" duration="4000" />
+      <workItem from="1694529327276" duration="1226000" />
+      <workItem from="1694623906633" duration="81000" />
+      <workItem from="1695137093564" duration="7000" />
+      <workItem from="1695393960317" duration="672000" />
+      <workItem from="1695525581205" duration="8000" />
+      <workItem from="1695749762677" duration="9000" />
+      <workItem from="1695749861678" duration="14000" />
+      <workItem from="1696856694872" duration="88000" />
+      <workItem from="1697636734763" duration="859000" />
+      <workItem from="1697853068960" duration="5000" />
+      <workItem from="1699370208886" duration="651000" />
+      <workItem from="1699491303071" duration="96000" />
+      <workItem from="1699699164187" duration="200000" />
+      <workItem from="1699706128010" duration="12000" />
+      <workItem from="1699800073725" duration="44000" />
+      <workItem from="1699800177760" duration="805000" />
+      <workItem from="1700231210600" duration="170000" />
+      <workItem from="1700391357100" duration="81000" />
+      <workItem from="1700402734980" duration="46000" />
+      <workItem from="1700586877629" duration="616000" />
+      <workItem from="1700830132770" duration="598000" />
+      <workItem from="1700840302163" duration="123000" />
+      <workItem from="1701494146580" duration="2884000" />
+      <workItem from="1701519243856" duration="1430000" />
+      <workItem from="1702918354704" duration="4000" />
+      <workItem from="1704518843921" duration="2355000" />
+      <workItem from="1704522607249" duration="31000" />
+      <workItem from="1704545322217" duration="16000" />
+      <workItem from="1704545548412" duration="10000" />
+      <workItem from="1704545679702" duration="204000" />
+      <workItem from="1704547717746" duration="6000" />
+      <workItem from="1710769212170" duration="379000" />
+      <workItem from="1710941254179" duration="2742000" />
+      <workItem from="1712152023005" duration="167000" />
+      <workItem from="1712213527155" duration="11000" />
+      <workItem from="1713962422356" duration="218000" />
+      <workItem from="1720534597791" duration="605000" />
+      <workItem from="1720852642537" duration="2789000" />
+      <workItem from="1720879238661" duration="6000" />
+      <workItem from="1720884957370" duration="39000" />
+    </task>
+    <task id="LOCAL-00001" summary="11">
+      <created>1633190731661</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1633190731661</updated>
+    </task>
+    <task id="LOCAL-00002" summary="114545454">
+      <created>1634832953332</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1634832953332</updated>
+    </task>
+    <task id="LOCAL-00003" summary="11454545454545">
+      <created>1634908886976</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1634908886976</updated>
+    </task>
+    <task id="LOCAL-00004" summary="11454545454555545">
+      <created>1660568481372</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1660568481372</updated>
+    </task>
+    <task id="LOCAL-00005" summary="11454545454555545">
+      <created>1660568496337</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1660568496337</updated>
+    </task>
+    <task id="LOCAL-00006" summary="114545412">
+      <created>1667367866988</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1667367866988</updated>
+    </task>
+    <task id="LOCAL-00007" summary="xiugai">
+      <created>1671083654212</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1671083654212</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="11" />
+    <MESSAGE value="114545454" />
+    <MESSAGE value="11454545454545" />
+    <MESSAGE value="11454545454555545" />
+    <MESSAGE value="114545412" />
+    <MESSAGE value="xiugai" />
+    <option name="LAST_COMMIT_MESSAGE" value="xiugai" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="495" y="113" key="CommitChangelistDialog2" timestamp="1720886995649">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="495" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1720886995649" />
+    <state x="463" y="165" key="SettingsEditor" timestamp="1720854643169">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="463" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1720854643169" />
+  </component>
+</project>

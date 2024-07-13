@@ -209,6 +209,19 @@ port=1531
 filename=tmp_${tableName}_${current_date}.log
 # 这里是用来判断环境的  || 表示或者   && 表示并且
 # telnet  是用来测试远程服务器的端口是否开启，是否可以访问这个端口
+
+# timeout 0.1 telnet $ip $port > $filename       是一个命令
+# cat $filename | grep scape | wc -l             是一个命令：表示读取过滤到scape的行，有多少行 | 是管道符号。。。
+# rm -rf $filename                               是一个命令
+
+#在用linux命令时候， 我们经常需要同时执行多条命令， 那么命令之间该如何分割呢？
+#
+#         分号 ; 顺序地独立执行各条命令， 彼此之间不关心是否失败， 所有命令都会执行。
+#
+#         &&  ： 顺序执行各条命令， 只有当前一个执行成功时候， 才执行后面的。
+#
+#        ||   ： 顺序执行各条命令， 只有当前面一个执行失败的时候， 才执行后面的。
+
 env=`timeout 0.1 telnet $ip $port > $filename || cat $filename | grep scape | wc -l && rm -rf $filename`
 
 #dwm抽数到cfods

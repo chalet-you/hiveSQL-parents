@@ -1,0 +1,6 @@
+type=command
+
+# 表名由Azkaban 动态传参进来
+p=${tableName}
+command=echo "=======================tableName=${tableName}======================="
+command.1=sh ./oracle2hive.sh ${p}

@@ -43,13 +43,3 @@ row format delimited fields terminated by ',';
 
 load data local inpath '/root/hivedata/tab1.txt' into table tab1 partition (col3="2");
 
-
-
-
-
-
-
-
-
-
-

@@ -32,7 +32,7 @@ inner join(
                 and tt.cust_mobile_no=a2.mobile_no
                 and a2.cust_wx_id=a.cust_wx_id)) t1 on t.wx_id=t1.cust_wx_id)tmp
 )tmp1 where tmp1.rn=1 limit 3000
-;" |sed 's/[\t]/,/g' >wx_talk.csv
+;" | sed 's/[\t]/,/g' > wx_talk.csv
 
 echo 'Data Set is successesd to convert to gbk...'
 

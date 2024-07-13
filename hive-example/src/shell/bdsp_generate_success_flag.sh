@@ -15,7 +15,7 @@ function generate_success_flag() {
   hadoop_user=$1
   db_name=$2
   table_name=$3
-# 看替换的定义，${varname:-word}，如果varname存在且非null，则返回其值；否则，返回word。用途：如果变量未定义，则返回默认值。
+  # 看替换的定义，${varname:-word}，如果varname存在且非null，则返回其值；否则，返回word。用途：如果变量未定义，则返回默认值。
   flag_date=${4:-${yesterday}}
 
 

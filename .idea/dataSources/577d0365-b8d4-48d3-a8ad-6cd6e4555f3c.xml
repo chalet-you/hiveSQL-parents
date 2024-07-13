@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@192.168.88.223">
+  <database-model serializer="dbm" dbms="HIVE" family-id="HIVE" format-version="4.17">
+    <root id="1">
+      <ServerVersion>1.1.0</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="default">
+      <Comment>Default Hive database</Comment>
+      <Current>1</Current>
+      <Location>hdfs://node1:8020/user/hive/warehouse</Location>
+    </schema>
+    <schema id="3" parent="1" name="itcast_dwd">
+      <Location>hdfs://node1:8020/user/hive/warehouse/itcast_dwd.db</Location>
+    </schema>
+    <schema id="4" parent="1" name="itcast_dws">
+      <Location>hdfs://node1:8020/user/hive/warehouse/itcast_dws.db</Location>
+    </schema>
+    <schema id="5" parent="1" name="itcast_ods">
+      <Location>hdfs://node1:8020/user/hive/warehouse/itcast_ods.db</Location>
+    </schema>
+    <schema id="6" parent="1" name="test">
+      <Location>hdfs://node1:8020/user/hive/warehouse/test.db</Location>
+    </schema>
+    <table id="7" parent="2" name="fromsqoop">
+      <RowFormatSerde>org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe</RowFormatSerde>
+      <InputFormat>org.apache.hadoop.mapred.TextInputFormat</InputFormat>
+      <OutputFormat>org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat</OutputFormat>
+      <Location>hdfs://node1:8020/user/hive/warehouse/fromsqoop</Location>
+    </table>
+    <table id="8" parent="2" name="tb_url">
+      <RowFormatSerde>org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe</RowFormatSerde>
+      <SerdeProperties>field.delim
+\t</SerdeProperties>
+      <InputFormat>org.apache.hadoop.mapred.TextInputFormat</InputFormat>
+      <OutputFormat>org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat</OutputFormat>
+      <Location>hdfs://node1:8020/user/hive/warehouse/tb_url</Location>
+    </table>
+    <table id="9" parent="2" name="words">
+      <RowFormatSerde>org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe</RowFormatSerde>
+      <InputFormat>org.apache.hadoop.mapred.TextInputFormat</InputFormat>
+      <OutputFormat>org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat</OutputFormat>
+      <Location>hdfs://node1:8020/user/hive/warehouse/words</Location>
+    </table>
+    <table id="10" parent="5" name="web_chat_ems">
+      <Comment>访问会话信息表</Comment>
+      <Temporary>1</Temporary>
+    </table>
+    <table id="11" parent="5" name="web_chat_text_ems">
+      <Comment>EMS-PV测试表</Comment>
+      <Temporary>1</Temporary>
+    </table>
+    <table id="12" parent="6" name="qc_man">
+      <Temporary>1</Temporary>
+    </table>
+    <table id="13" parent="6" name="words">
+      <RowFormatSerde>org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe</RowFormatSerde>
+      <InputFormat>org.apache.hadoop.mapred.TextInputFormat</InputFormat>
+      <OutputFormat>org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat</OutputFormat>
+      <Location>hdfs://node1:8020/user/hive/warehouse/words</Location>
+    </table>
+    <column id="14" parent="7" name="id">
+      <Position>1</Position>
+      <DataType>int|4s</DataType>
+    </column>
+    <column id="15" parent="7" name="name">
+      <Position>2</Position>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="16" parent="7" name="age">
+      <Position>3</Position>
+      <DataType>int|4s</DataType>
+    </column>
+    <column id="17" parent="8" name="id">
+      <Position>1</Position>
+      <DataType>int|4s</DataType>
+    </column>
+    <column id="18" parent="8" name="url">
+      <Position>2</Position>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="19" parent="9" name="word">
+      <Position>1</Position>
+      <Comment>这是中文</Comment>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="20" parent="10" name="id">
+      <Position>1</Position>
+      <Comment>主键</Comment>
+      <DataType>int|4s</DataType>
+    </column>
+    <column id="21" parent="10" name="create_date_time">
+      <Position>2</Position>
+      <Comment>数据创建时间</Comment>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="22" parent="10" name="session_id">
+      <Position>3</Position>
+      <Comment>sessionId</Comment>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="23" parent="10" name="sid">
+      <Position>4</Position>
+      <Comment>访客id</Comment>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="24" parent="10" name="create_time">
+      <Position>5</Position>
+      <Comment>会话创建时间</Comment>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="25" parent="10" name="seo_source">
+      <Position>6</Position>
+      <Comment>搜索来源</Comment>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="26" parent="10" name="seo_keywords">
+      <Position>7</Position>
+      <Comment>关键字</Comment>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="27" parent="10" name="ip">
+      <Position>8</Position>
+      <Comment>IP地址</Comment>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="28" parent="10" name="area">
+      <Position>9</Position>
+      <Comment>地域</Comment>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="29" parent="10" name="country">
+      <Position>10</Position>
+      <Comment>所在国家</Comment>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="30" parent="10" name="province">
+      <Position>11</Position>
+      <Comment>省</Comment>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="31" parent="10" name="city">
+      <Position>12</Position>
+      <Comment>城市</Comment>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="32" parent="10" name="origin_channel">
+      <Position>13</Position>
+      <Comment>投放渠道</Comment>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="33" parent="10" name="user_match">
+      <Position>14</Position>
+      <Comment>所属坐席</Comment>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="34" parent="10" name="manual_time">
+      <Position>15</Position>
+      <Comment>人工开始时间</Comment>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="35" parent="10" name="begin_time">
+      <Position>16</Position>
+      <Comment>坐席领取时间 </Comment>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="36" parent="10" name="end_time">
+      <Position>17</Position>
+      <Comment>会话结束时间</Comment>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="37" parent="10" name="last_customer_msg_time_stamp">
+      <Position>18</Position>
+      <Comment>客户最后一条消息的时间</Comment>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="38" parent="10" name="last_agent_msg_time_stamp">
+      <Position>19</Position>
+      <Comment>坐席最后一下回复的时间</Comment>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="39" parent="10" name="reply_msg_count">
+      <Position>20</Position>
+      <Comment>客服回复消息数</Comment>
+      <DataType>int|4s</DataType>
+    </column>
+    <column id="40" parent="10" name="msg_count">
+      <Position>21</Position>
+      <Comment>客户发送消息数</Comment>
+      <DataType>int|4s</DataType>
+    </column>
+    <column id="41" parent="10" name="browser_name">
+      <Position>22</Position>
+      <Comment>浏览器名称</Comment>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="42" parent="10" name="os_info">
+      <Position>23</Position>
+      <Comment>系统名称</Comment>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="43" parent="10" name="starts_time">
+      <Position>24</Position>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="44" parent="11" name="id">
+      <Position>1</Position>
+      <Comment>主键来自MySQL</Comment>
+      <DataType>int|4s</DataType>
+    </column>
+    <column id="45" parent="11" name="referrer">
+      <Position>2</Position>
+      <Comment>上级来源页面</Comment>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="46" parent="11" name="from_url">
+      <Position>3</Position>
+      <Comment>会话来源页面</Comment>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="47" parent="11" name="landing_page_url">
+      <Position>4</Position>
+      <Comment>访客着陆页面</Comment>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="48" parent="11" name="url_title">
+      <Position>5</Position>
+      <Comment>咨询页面title</Comment>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="49" parent="11" name="platform_description">
+      <Position>6</Position>
+      <Comment>客户平台信息</Comment>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="50" parent="11" name="other_params">
+      <Position>7</Position>
+      <Comment>扩展字段中数据</Comment>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="51" parent="11" name="history">
+      <Position>8</Position>
+      <Comment>历史访问记录</Comment>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="52" parent="11" name="start_time">
+      <Position>9</Position>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="53" parent="12" name="visit_no">
+      <Position>1</Position>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="54" parent="12" name="tag_type">
+      <Position>2</Position>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="55" parent="13" name="word">
+      <Position>1</Position>
+      <DataType>string|12s</DataType>
+    </column>
+  </database-model>
+</dataSource>

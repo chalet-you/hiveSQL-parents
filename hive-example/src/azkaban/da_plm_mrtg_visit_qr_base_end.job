@@ -1,4 +1,4 @@
-type=command
+type= command
 command=echo "============================= All da_plm_mrtg_visit_qr_base tables has finished !============================="
 
 dependencies=da_dwm_pat_violation_label_conf_base,da_dwm_pat_apply_org_conf_base,da_dwm_vw_visit_strategy
