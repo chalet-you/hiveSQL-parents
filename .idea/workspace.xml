@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d33f5c9-35c4-49d6-9db4-66bde7abc2d0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/hive-example/src/azkaban/da_plm_mrtg_visit_qr_base_end.job" beforeDir="false" afterPath="$PROJECT_DIR$/hive-example/src/azkaban/da_plm_mrtg_visit_qr_base_end.job" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hive-example/src/hivesql/2_hive_load.sql" beforeDir="false" afterPath="$PROJECT_DIR$/hive-example/src/hivesql/2_hive_load.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hive-example/src/project_01_sql/itcast_ods/web_chat_text_ems_sqoop_import.sh" beforeDir="false" afterPath="$PROJECT_DIR$/hive-example/src/project_01_sql/itcast_ods/web_chat_text_ems_sqoop_import.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hive-example/src/shell/bdsp_check_table_is_ready.sh" beforeDir="false" afterPath="$PROJECT_DIR$/hive-example/src/shell/bdsp_check_table_is_ready.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hive-example/src/shell/bdsp_generate_success_flag.sh" beforeDir="false" afterPath="$PROJECT_DIR$/hive-example/src/shell/bdsp_generate_success_flag.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hive-example/src/task/ck.sh" beforeDir="false" afterPath="$PROJECT_DIR$/hive-example/src/task/ck.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hive-example/src/task/dmm_plm_cmp_packet_cut_info.sh" beforeDir="false" afterPath="$PROJECT_DIR$/hive-example/src/task/dmm_plm_cmp_packet_cut_info.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hive-example/src/task/hive_to_csv.sh" beforeDir="false" afterPath="$PROJECT_DIR$/hive-example/src/task/hive_to_csv.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -328,6 +321,7 @@
       <workItem from="1720852642537" duration="2789000" />
       <workItem from="1720879238661" duration="6000" />
       <workItem from="1720884957370" duration="39000" />
+      <workItem from="1720886883927" duration="244000" />
     </task>
     <task id="LOCAL-00001" summary="11">
       <created>1633190731661</created>
@@ -378,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671083654212</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add:添加新的脚本代码">
+      <created>1720887010932</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1720887010932</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -391,13 +392,14 @@
     <MESSAGE value="11454545454555545" />
     <MESSAGE value="114545412" />
     <MESSAGE value="xiugai" />
-    <option name="LAST_COMMIT_MESSAGE" value="xiugai" />
+    <MESSAGE value="add:添加新的脚本代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:添加新的脚本代码" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="495" y="113" key="CommitChangelistDialog2" timestamp="1720886995649">
+    <state x="495" y="113" key="CommitChangelistDialog2" timestamp="1720887010265">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="495" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1720886995649" />
+    <state x="495" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1720887010265" />
     <state x="463" y="165" key="SettingsEditor" timestamp="1720854643169">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
